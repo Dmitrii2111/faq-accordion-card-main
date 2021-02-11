@@ -1,5 +1,5 @@
 list.onclick = function(event){
-   if (event.target.tagName != 'H2') {
+   if (event.target.tagName != 'DIV') {
      return
    }
    let hidenElement = event.target.nextElementSibling;

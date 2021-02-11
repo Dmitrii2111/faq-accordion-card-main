@@ -6,12 +6,12 @@
 h1 {
    margin-bottom: 30px;
 }
-h2, p {
-   font-weight: 400;
+ p {
    font-size: 12px;
    color: hsl(240, 6%, 50%);
 }
-h2 {
+.text_block {
+   font-size: 12px;
    width: 100%;
    margin-top: 10px;
    margin-bottom: 10px;
@@ -20,9 +20,13 @@ h2 {
    justify-content: space-between;
    flex-direction: row;
 }
-
-h2 img{
+.text_block:hover {
+   cursor: pointer;
+   color: hsl(14, 88%, 65%);
+}
+.text_block img{
    transform: rotate(180deg);
+   font-size: unset;
 }
 
 .container {
