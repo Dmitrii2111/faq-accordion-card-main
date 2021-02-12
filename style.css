@@ -27,6 +27,7 @@ h1 {
 .text_block img{
    transform: rotate(180deg);
    font-size: unset;
+   padding: 2px;
 }
 
 .container {
@@ -85,5 +86,52 @@ ul {
 li {
   list-style: none;
   padding-bottom: 10px;
-  border-bottom: solid 1px grey;
+  border-bottom: solid 1px hsl(240, 5%, 91%);
+}
+
+@media (max-width: 375px) {
+   .illustration-box-desktop, .image_container{
+      display: none;
+   }
+   main {
+      width: 90%;
+      height: unset;
+      overflow: visible;
+      margin: 0 auto;
+   }
+   .text_container{
+      background-image: url(./images/bg-pattern-mobile.svg);      
+      background-repeat: no-repeat;
+      background-position: center 0px,
+      center -101px;
+      text-align: center;
+      width: 100%;
+      padding: 150px 20px 20px 20px;
+   }
+   .text_container p{
+      text-align: start;
+   }
+   .text_block:hover {
+      cursor: unset;
+      color: unset;
+   }
+
+   .container{
+      display: block;
+      padding-top: 40%;
+   }
+   .attribution{
+      left: 10%;
+   }
+   .illustration-woman-online-mobile{
+      position: absolute;
+      top: 5%;
+      left: 12%;
+   }
+}
+
+@media (min-width: 375px){
+   .illustration-woman-online-mobile{
+      display: none
+   }
 }
